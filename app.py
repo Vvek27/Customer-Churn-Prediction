@@ -83,7 +83,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-@st.cache(suppress_st_warning=True)
+
 def main():
     # sidebar
     activities=["Select activity","EDA","Data visualization","Prediction","Model statistics","About"]
