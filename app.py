@@ -1,5 +1,4 @@
 from numpy.core.fromnumeric import var
-import base64
 from seaborn import palettes
 import streamlit as st
 import pandas as pd
@@ -10,14 +9,12 @@ from scipy.stats import boxcox
 from imblearn.over_sampling import SMOTE
 
 from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 
 import warnings
@@ -86,14 +83,14 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.cache(suppress_st_warning=True)
+@st.cache(suppress_st_warning=True)
 def main():
     # sidebar
     activities=["Select activity","EDA","Data visualization","Prediction","Model statistics","About"]
     choice=st.sidebar.selectbox("",activities)
 
     if choice=="EDA":
-        st.header("EDA")
+        st.header("Exploratory Data Analysis")
         # Basic functions
         method_names=["Show dataset","Head","Tail","Shape","Describe","Missing value","Columns Names","Value counts"]
         method_operation=[data,data.head(),data.tail(),data.shape,data.describe(),data.isnull().sum(),data.columns,target_var.value_counts()]
