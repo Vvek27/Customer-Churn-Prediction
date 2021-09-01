@@ -78,7 +78,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("https://www.freepik.com/free-photo/gray-abstract-wireframe-technology-background_15474085.htm#page=1&query=website%20background&position=21")
+        background: url("https://image.freepik.com/free-photo/gray-abstract-wireframe-technology-background_53876-101941.jpg")
     }
     </style>
     """,
