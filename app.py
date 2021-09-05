@@ -25,9 +25,9 @@ import os
 plt.style.use("ggplot")
 
 # Dataframe
-my_dataset=r"C:\Users\Hp\Documents\ML Projects\Churn_Modelling.csv"
+my_dataset="Churn_Modelling.csv"
 def explore_data(dataset):
-    df=pd.read_csv(os.path.join(dataset))
+    df=pd.read_csv(dataset)
     return df
 data=explore_data(my_dataset)
 features=11
