@@ -176,7 +176,7 @@ def Visualization():
             st.write(sns.boxplot(target_var,data[column_name]))
             st.pyplot()
         # plots for categorical variable
-    elif st.checkbox("Categorical variable"):
+    if st.checkbox("Categorical variable"):
         column_name=st.selectbox("",("Select column","Geography","Gender","Tenure","NumOfProducts"))
         if column_name=="Geography":
             plt.figure(figsize=(5,3))
@@ -200,24 +200,24 @@ def Visualization():
             st.pyplot()
             st.write(pd.crosstab(data[column_name],target_var).plot(kind="bar"))
             st.pyplot()
-        elif st.checkbox("Target variable"):
-            values=target_var.value_counts().values
-            index=target_var.value_counts().index
-            plt.figure(figsize=(6,4))
-            st.write(target_var.value_counts().plot.pie(radius=0.75,autopct="%0.2F%%"))
-            my_circle=plt.Circle( (0,0), 0.3, color='white')
-            p=plt.gcf()
-            p.gca().add_artist(my_circle)
-            st.pyplot(fig=None)
-            st.write(sns.barplot(index,values))
-            st.pyplot()
+    if st.checkbox("Target variable"):
+        values=target_var.value_counts().values
+        index=target_var.value_counts().index
+        plt.figure(figsize=(6,4))
+        st.write(target_var.value_counts().plot.pie(radius=0.75,autopct="%0.2F%%"))
+        my_circle=plt.Circle( (0,0), 0.3, color='white')
+        p=plt.gcf()
+        p.gca().add_artist(my_circle)
+        st.pyplot(fig=None)
+        st.write(sns.barplot(index,values))
+        st.pyplot()
         
-    elif st.checkbox("Correlation matrix"):
+    if st.checkbox("Correlation matrix"):
         plt.figure(figsize=(10,5))
         st.write(sns.heatmap(data.corr(),annot=True,cmap="Blues"))
         st.pyplot()
 
-    elif st.checkbox("Outiers analysis"):
+    if st.checkbox("Outiers analysis"):
         columns=["Balance","EstimatedSalary","Age","CreditScore"]
         for i in range(len(columns)):
             plt.figure(figsize=(10,4))
