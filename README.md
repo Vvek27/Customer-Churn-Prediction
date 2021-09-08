@@ -5,13 +5,11 @@
 
 We have a dataset of bank in which 
 bank provided customer information for 
-last 6 months and they create the data 
-that which customer leaving the bank
-or not.
+last 6 months
 
 So if the bank wants to know in future
 which customer are planning to leave the 
-bank.
+bank or not that will be very useful
 
 I have created a web app that can Predict
 whether the customer leave the bank or not
