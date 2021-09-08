@@ -17,7 +17,7 @@ I have created a web app that can Predict
 whether the customer leave the bank or not
 based on the feature in the dataset
 
-i have used streamlit for web application
+I have used streamlit for web application
 and used ANN for training the model
 
 ## Demo
