@@ -1,7 +1,7 @@
 
-Customer Churn Prediction
+# Customer Churn Prediction
 
-Project Description
+## Project Description
 
 We have have a dataset of bank in which 
 bank provided customer information for 
