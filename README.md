@@ -27,7 +27,8 @@ This is link of my web app
 https://share.streamlit.io/vvek27/customer-churn-prediction/main/app.py
 
 
+https://user-images.githubusercontent.com/89688146/132466007-4ff5ecf4-9a88-4bac-8a85-fa4fc9127454.mp4
 
 
-https://user-images.githubusercontent.com/89688146/132462517-9a7eb439-fd33-45ef-9533-7fc9751ad3bf.mp4
+
 
