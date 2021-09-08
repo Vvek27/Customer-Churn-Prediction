@@ -3,13 +3,13 @@
 
 ## Project Description
 
-We have have a dataset of bank in which 
+We have a dataset of bank in which 
 bank provided customer information for 
 last 6 months and they create the data 
 that which customer leaving the bank
 or not.
 
-So if new bank wants to know in future
+So if the bank wants to know in future
 which customer are planning to leave the 
 bank.
 
