@@ -86,20 +86,21 @@ st.markdown(
 )
 
 # sidebar
-activities=["Select activity","EDA","Data Visualization","Prediction","Model statistics","About"]
-choice=st.sidebar.selectbox("",activities)
-if choice=="Select activity":
-    activity()
-if choice=="EDA":
-    EDA()
-if choice=="Data Visualization":
-    Visualization()
-if choice=="Prediction":
-    predict()
-if choice=="Model statistics":
-    statistics()
-if choice=="About":
-    about()
+def main():
+    activities=["Select activity","EDA","Data Visualization","Prediction","Model statistics","About"]
+    choice=st.sidebar.selectbox("",activities)
+    if choice=="Select activity":
+        activity()
+    if choice=="EDA":
+        EDA()
+    if choice=="Data Visualization":
+        Visualization()
+    if choice=="Prediction":
+        predict()
+    if choice=="Model statistics":
+        statistics()
+    if choice=="About":
+        about()
 
 def activity():
     def lottie_file(url:str):
@@ -307,65 +308,5 @@ def statistics():
             st.write(method_opt[i])
 def about():
     st.text("streamlit app made by vivek patel")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-
-
-
-
-    
-        
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#    
-
-
-    
-
-    
+if __name__=="__main__":
+    main()  
