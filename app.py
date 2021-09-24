@@ -289,7 +289,7 @@ def predict():
 
     if st.button("Predict"):
         predicted_value=my_model.predict(scaler.transform([col_list]))
-        if predicted_value[0]<0.5:
+        if predicted_value[0]<=0.5:
             st.success("Happy! Customer is not leaving bank")
             st.write(0)
         else:
